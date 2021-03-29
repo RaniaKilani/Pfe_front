@@ -1,0 +1,83 @@
+<div class=" content">
+  <div class=" row">
+    <div class=" col-md-12">
+      <div class=" card">
+        <div class=" card-header">
+          <h4 class=" card-title">Liste des véhicules</h4>
+        </div>
+        <div class=" col-sm-11">
+              <div
+                class=" btn-group btn-group-toggle float-right"
+                data-toggle="buttons"
+              >
+                <label class=" btn btn-sm btn-success btn-simple" >
+                 <span (click) = "goToAddPage('addDriver')"
+                    class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                  >
+                    Ajiuter véhicule
+                  </span>
+
+
+                 </label>
+              </div>
+            </div>
+        <div class=" card-body">
+          <div class=" table-responsive">
+            <table class=" table tablesorter" id="">
+              <thead class=" text-primary">
+                <tr>
+                <th>matricule</th>
+                  <th>type de véhicule</th>
+                  <th>année de fabrication</th>
+                  <th>marque</th>
+                  <th class=" text-center">type de carburant</th>
+                  <th>puissance</th>
+                  <th>type d'entretien</th>
+                  <th>Etat Maintenance</th>
+                  <th>Capacité en Kg</th>
+                  <th>Nombre de places</th>
+                  <th>Disponibilité</th>
+                  <th>Disponibilté</th>
+                  <th>action</th>
+                </tr>
+              </thead>
+              <tbody  >
+                <tr *ngFor = "let l of list">
+                <td>{{l.matricule}}</td>
+                  <td>{{l.type_de_vehicule}}</td>
+                  <td>{{l.annee_de_fabrication | date :'dd/MM/yyyy'}}</td>
+                  <td>{{l.marque}}</td>
+                  <td class=" text-center">{{l.type_de_carburant}}</td>
+                  <td>{{l.Consommation_carburant_en_L}}</td>
+                  <td>{{l.puissance}}</td>
+                  <td>{{l.type_entretien}}</td>
+                  <td>{{l.Etat_Maintenance}}</td>
+                  <td>{{l.Capacite_en_Kg}}</td>
+                  <td>{{l.Disponibilite}}</td>
+                  <td>{{l.Kilometrage_en_km}}</td>
+                  <td >
+                  <label class=" btn btn-sm btn-success btn-simple" >
+                  <span class=" d-none d-sm-block d-md-block d-lg-block d-xl-block" [routerLink]="['/updateCar']"> editer </span>
+                  </label>
+
+                  <label class=" btn btn-sm btn-danger btn-simple" >
+
+
+
+                 <span class=" d-none d-sm-block d-md-block d-lg-block d-xl-block" (click)="delete(el)"
+
+                 >supprimer
+                     </span>
+                   </label>
+                  </td>
+
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
