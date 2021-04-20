@@ -11,10 +11,10 @@
                 data-toggle="buttons"
               >
                 <label class=" btn btn-sm btn-success btn-simple" >
-                 <span (click) = "goToAddPage('addDriver')"
+                 <span (click) = "goToAddPage('addCar')"
                     class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
                   >
-                    Ajiuter véhicule
+                    Ajouter véhicule
                   </span>
 
 
@@ -30,31 +30,46 @@
                   <th>type de véhicule</th>
                   <th>année de fabrication</th>
                   <th>marque</th>
-                  <th class=" text-center">type de carburant</th>
+                  <th>type de carburant</th>
                   <th>puissance</th>
-                  <th>type d'entretien</th>
-                  <th>Etat Maintenance</th>
+                  <th>kilométrage</th>
+                  <th>consommation de carburant</th>
+                  <th>nombre des places</th>
                   <th>Capacité en Kg</th>
-                  <th>Nombre de places</th>
+
+                  <th>Climatisation</th>
+                  <th>Parallélisme</th>
+                  <th>Vidange</th>
+                  <th>Mouteur</th>
+                  <th>Pneumatique</th>
+                  <th>Etat</th>
                   <th>Disponibilité</th>
-                  <th>Disponibilté</th>
+
                   <th>action</th>
                 </tr>
               </thead>
               <tbody  >
                 <tr *ngFor = "let l of list">
-                <td>{{l.matricule}}</td>
-                  <td>{{l.type_de_vehicule}}</td>
-                  <td>{{l.annee_de_fabrication | date :'dd/MM/yyyy'}}</td>
-                  <td>{{l.marque}}</td>
-                  <td class=" text-center">{{l.type_de_carburant}}</td>
-                  <td>{{l.Consommation_carburant_en_L}}</td>
-                  <td>{{l.puissance}}</td>
-                  <td>{{l.type_entretien}}</td>
-                  <td>{{l.Etat_Maintenance}}</td>
-                  <td>{{l.Capacite_en_Kg}}</td>
-                  <td>{{l.Disponibilite}}</td>
-                  <td>{{l.Kilometrage_en_km}}</td>
+                <td>{{l.mat}}</td>
+                  <td>{{l.ty}}</td>
+                  <td>{{l.an | date :'dd/MM/yyyy'}}</td>
+                  <td>{{l.mr}}</td>
+                  <td class=" text-center">{{l.tyC}}</td>
+                  <td>{{l.powr}}</td>
+                  <td>{{l.kilo}}</td>
+                  <td>{{l.conso}}</td>
+                  <td>{{l.nb}}</td>
+                  <td>{{l.cap}}</td>
+
+                  <td>{{l.clim}}</td>
+                  <td>{{l.para}}</td>
+                  <td>{{l.vid}}</td>
+                  <td>{{l.mout}}</td>
+                  <td>{{l.pneau}}</td>
+
+                  <td>{{l.etat}}</td>
+                  <td>{{l.dispo}}</td>
+
                   <td >
                   <label class=" btn btn-sm btn-success btn-simple" >
                   <span class=" d-none d-sm-block d-md-block d-lg-block d-xl-block" [routerLink]="['/updateCar']"> editer </span>

@@ -9,7 +9,7 @@ export class CarService {
 
   constructor() {
     //to declare a static list of cars
-    this.list = [{'matricule':'cccc' ,'type_de_vehicule':'voiture','annee_de_fabrication':new Date('10/25/2015'),'marque': 'clio', 'type_de_carburant':'Essence','Consommation_carburant_en_L':5555,'puissance':4444,'type_entretien':'valide','Etat_Maintenance':'hhhh','Capacite_en_Kg':123, 'Disponibilite':'dispo','Kilometrage_en_km':157},
+    this.list = [{'mat':'cccc' ,'ty':'voiture','an':new Date('10/25/2015'),'mr': 'clio', 'tyC':'Essence','powr':4444,'kilo':157,'conso':5555,'maint':{'clim':true, 'para' :false, 'vid':true, 'mout':true, 'pneau':true,'etat':'okk' },'nb' : 2,'cap':123, 'dispo':'dispo'},
 
 
   ];

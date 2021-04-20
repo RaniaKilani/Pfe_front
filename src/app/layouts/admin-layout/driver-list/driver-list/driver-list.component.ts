@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Driver } from 'src/app/models/driver';
 
 import { DriverService } from 'src/app/sevices/driver.service';
@@ -10,15 +10,22 @@ import { DriverService } from 'src/app/sevices/driver.service';
   styleUrls: ['./driver-list.component.scss']
 })
 export class DriverListComponent implements OnInit {
+  
   list: Driver[];
 
-  constructor(private driverService:DriverService,private router:Router) {
-    this.list = driverService.listeDriver();
+  currentDriver = new Driver()
+  constructor(private driverService:DriverService,private router:Router,private activatedRoute :ActivatedRoute) {
+
+    /* this.list = driverService.listeDriver(); */
   }
   goToAddPage(AddPage:string):void{
     this.router.navigate([`${AddPage}`]);
 }
   ngOnInit(): void {
+    this.driverService.listeDriver().subscribe(dr => {
+      console.log(dr);
+      this.list = dr;
+      });
   }
  /* deleteDriver( el : Driver){
 
@@ -32,7 +39,12 @@ export class DriverListComponent implements OnInit {
 
    this.list.splice(driver,1);
    }
+   updateDriver(){
+    console.log("ho");
 
+   this.currentDriver = this.driverService.consulterDriver(this.activatedRoute.snapshot.params.id);
+
+   }
    /*
    deleteDriver(driver: Driver){//méthode pour supprimer un chaffeur
     //console.log(driver);

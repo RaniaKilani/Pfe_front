@@ -37,7 +37,7 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'add',
+    path: 'addCar',
     component: AddCarComponent,
 
   },
@@ -47,8 +47,10 @@ const routes: Routes = [
 
   },
   {
-    path: 'listDriver',
+    path: 'api/Chauffeur',
     component: DriverListComponent,
+    loadChildren:
+          "./layouts/admin-layout/admin-layout.module#AdminLayoutModule"
 
   },
   {
@@ -57,7 +59,7 @@ const routes: Routes = [
 
   },
   {
-    path: 'updateDriver',
+    path: 'updateDriver/:id',
     component: UpdateDriverComponent,
 
   },

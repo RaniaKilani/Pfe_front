@@ -1,15 +1,16 @@
 export class Car{
-  matricule:string;
-  type_de_vehicule:string;
-  annee_de_fabrication:Date;
-  marque:string;
-  type_de_carburant:string;
-  Consommation_carburant_en_L:number;
-  puissance:number;
-  type_entretien:string;
-  Etat_Maintenance:string;
-  Capacite_en_Kg:number;
-  Disponibilite:string;
-  Kilometrage_en_km:number;
+  mat:string;
+  ty:string;
+  an:Date;
+  mr:string;
+  tyC:string;
+  powr:number;
+  kilo:number;
+  conso:number;
+  nb : number;
+  cap:number;
+  maint:{clim:boolean; para:boolean; vid:boolean; mout:boolean; pneau:boolean; etat:string};
+  dispo:string;
+
 
 }

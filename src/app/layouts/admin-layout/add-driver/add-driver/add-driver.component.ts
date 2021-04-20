@@ -17,11 +17,18 @@ export class AddDriverComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  addDriver(){
+ /* addDriver(){
     console.log(this.newDriver);
     this.driverService.addDriver(this.newDriver);
 
-  }
+  }*/
+  addProduit(){
+    this.driverService.addDriver(this.newDriver).subscribe(drv => {
+    console.log(drv);
+    });
+}
+
+
 
 
 

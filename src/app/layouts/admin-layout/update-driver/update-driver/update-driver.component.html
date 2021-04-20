@@ -1,1 +1,149 @@
-<p>update-driver works!</p>
+
+<div class=" content">
+  <div class=" row">
+    <div class=" col-md-12">
+      <div class=" card">
+        <div class=" card-header"><h5 class=" title">Modifier les chauffeurs </h5></div>
+        <div class=" card-body">
+          <form>
+          <div class=" row">
+              <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> Id </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Matricule CNSS"
+                    type="text" [(ngModel)] = "currentDriver.idDriver" name = "idDriver"
+
+                  />
+                </div>
+              </div>
+               <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> Matricule CNSS </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Matricule CNSS"
+                    type="text" [(ngModel)] = "currentDriver.Matricule_CNSS" name = "Matricule CNSS"
+
+                  />
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+            <div class=" row">
+              <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> Nom </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Nom"
+                    type="text" [(ngModel)] = "currentDriver.nom" name = "Nom"
+
+                  />
+                </div>
+              </div>
+              <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> Prénom </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Prénom"
+                    type="text" [(ngModel)] = "currentDriver.prenom" name = "Prénom"
+
+                  />
+
+              </div>
+
+            </div>
+
+            </div>
+
+
+            <div class=" row">
+              <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> N° téléphone </label>
+                  <input
+                    class=" form-control"
+                    placeholder="N° téléphone"
+                    type="text" [(ngModel)] = "currentDriver.Num_telephone" name = "N° téléphone"
+
+
+                  />
+                </div>
+              </div>
+              <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> Adresse </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Adresse"
+                    type="text" [(ngModel)] = "currentDriver.adresse" name = "adresse"
+
+
+                  />
+                </div>
+              </div>
+
+            </div>
+            <div class=" row">
+              <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> Date De Naissance  </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Date De Naissance"
+                    type="date"  [(ngModel)] = "currentDriver.Date_de_naissance" name = "Date De Naissance"
+
+                  />
+                </div>
+              </div>
+               <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> Date D'embauche  </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Date D'embauche"
+                    type="date"  [(ngModel)] = "currentDriver.Date_de_embauche" name = "Date D'embauche"
+
+                  />
+
+              </div>
+
+
+            </div>
+
+
+            </div>
+
+
+             <div class=" row">
+              <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> Email  </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Email"
+                    type="number" type="text" [(ngModel)] = "currentDriver.email" name="email"
+
+                  />
+                </div>
+              </div>
+            </div>
+
+
+
+          </form>
+        </div>
+        <div class=" card-footer">
+          <button class=" btn btn-fill btn-success" type="submit" (click)="updateDriver()" (click)="goToListPage('listDriver')">Save</button>
+        </div>
+      </div>
+    </div>
+
+</div>
