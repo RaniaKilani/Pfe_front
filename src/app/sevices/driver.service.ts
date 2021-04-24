@@ -11,7 +11,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class DriverService {
-  apiURL: string = 'http://127.0.0.1:5000/api/Chauffeur';
+  apiURL: string = 'http://127.0.0.1:5000/ch';
   list: Driver[];
   driver : Driver;
 
@@ -24,6 +24,7 @@ export class DriverService {
   listeDriver(): Observable<Driver[]>{ //tab de driver de type observable
     return this.http.get<Driver[]>(this.apiURL); //retourner liste des chauffeurs
   }
+
   /*listeDriver() {
     return this.list;
   }*/

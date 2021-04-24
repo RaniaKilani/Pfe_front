@@ -51,7 +51,7 @@ export const ROUTES: RouteInfo[] = [
     class: ""
   },
   {
-    path: "/api/Chauffeur",
+    path: "/listDriver",
     title: "Driver list",
     rtlTitle: "طباعة",
     icon: "icon-align-center",

@@ -47,7 +47,7 @@ const routes: Routes = [
 
   },
   {
-    path: 'api/Chauffeur',
+    path: 'listDriver',
     component: DriverListComponent,
     loadChildren:
           "./layouts/admin-layout/admin-layout.module#AdminLayoutModule"

@@ -22,7 +22,7 @@ export class AddDriverComponent implements OnInit {
     this.driverService.addDriver(this.newDriver);
 
   }*/
-  addProduit(){
+  addDriver(){
     this.driverService.addDriver(this.newDriver).subscribe(drv => {
     console.log(drv);
     });

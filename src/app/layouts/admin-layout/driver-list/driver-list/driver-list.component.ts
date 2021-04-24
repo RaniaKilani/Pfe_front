@@ -10,7 +10,7 @@ import { DriverService } from 'src/app/sevices/driver.service';
   styleUrls: ['./driver-list.component.scss']
 })
 export class DriverListComponent implements OnInit {
-  
+
   list: Driver[];
 
   currentDriver = new Driver()
@@ -23,8 +23,12 @@ export class DriverListComponent implements OnInit {
 }
   ngOnInit(): void {
     this.driverService.listeDriver().subscribe(dr => {
-      console.log(dr);
       this.list = dr;
+      for(let l of this.list){
+        console.log(l)
+        console.log(l["Nom "])
+      }
+
       });
   }
  /* deleteDriver( el : Driver){
