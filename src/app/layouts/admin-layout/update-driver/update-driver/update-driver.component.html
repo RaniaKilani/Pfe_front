@@ -12,29 +12,24 @@
                   <label> Id </label>
                   <input
                     class=" form-control"
-                    placeholder="Matricule CNSS"
-                    type="text" [(ngModel)] = "currentDriver.idDriver" name = "idDriver"
+                    placeholder="Id"
+                    type="text" [(ngModel)] = "currentDriver.IDChauffeur" name = "IDChauffeur"
 
                   />
                 </div>
               </div>
                <div class=" col-md-5 pr-md-1">
                 <div class=" form-group">
-                  <label> Matricule CNSS </label>
+                  <label> Nom de superviseur </label>
                   <input
                     class=" form-control"
-                    placeholder="Matricule CNSS"
-                    type="text" [(ngModel)] = "currentDriver.Matricule_CNSS" name = "Matricule CNSS"
-
+                    placeholder="Nom Superviseur"
+                    type="text" [(ngModel)] = "currentDriver.NomSuperviseur" name = "NomSuperviseur"
                   />
                 </div>
               </div>
 
             </div>
-
-
-
-
             <div class=" row">
               <div class=" col-md-5 pr-md-1">
                 <div class=" form-group">
@@ -42,27 +37,22 @@
                   <input
                     class=" form-control"
                     placeholder="Nom"
-                    type="text" [(ngModel)] = "currentDriver.nom" name = "Nom"
-
+                    type="text" [(ngModel)] = "currentDriver.Nom" name = "Nom"
                   />
                 </div>
               </div>
+
               <div class=" col-md-5 pr-md-1">
                 <div class=" form-group">
                   <label> Prénom </label>
                   <input
                     class=" form-control"
                     placeholder="Prénom"
-                    type="text" [(ngModel)] = "currentDriver.prenom" name = "Prénom"
-
+                    type="text" [(ngModel)] = "currentDriver.prenom" name = "prenom"
                   />
-
               </div>
-
             </div>
-
             </div>
-
 
             <div class=" row">
               <div class=" col-md-5 pr-md-1">
@@ -71,26 +61,23 @@
                   <input
                     class=" form-control"
                     placeholder="N° téléphone"
-                    type="text" [(ngModel)] = "currentDriver.Num_telephone" name = "N° téléphone"
-
-
+                    type="text" [(ngModel)] = "currentDriver.Telephone" name = "Telephone"
                   />
                 </div>
               </div>
+
               <div class=" col-md-5 pr-md-1">
                 <div class=" form-group">
                   <label> Adresse </label>
                   <input
                     class=" form-control"
                     placeholder="Adresse"
-                    type="text" [(ngModel)] = "currentDriver.adresse" name = "adresse"
-
-
+                    type="text" [(ngModel)] = "currentDriver.Adresse" name = "Adresse"
                   />
                 </div>
               </div>
-
             </div>
+
             <div class=" row">
               <div class=" col-md-5 pr-md-1">
                 <div class=" form-group">
@@ -98,8 +85,7 @@
                   <input
                     class=" form-control"
                     placeholder="Date De Naissance"
-                    type="date"  [(ngModel)] = "currentDriver.Date_de_naissance" name = "Date De Naissance"
-
+                    type="date"  [(ngModel)] = "currentDriver.DateNnaissance" name = "DateNnaissance"
                   />
                 </div>
               </div>
@@ -109,18 +95,11 @@
                   <input
                     class=" form-control"
                     placeholder="Date D'embauche"
-                    type="date"  [(ngModel)] = "currentDriver.Date_de_embauche" name = "Date D'embauche"
-
+                    type="date"  [(ngModel)] = "currentDriver.DateEmbauche" name = "DateEmbauche"
                   />
-
               </div>
-
-
             </div>
-
-
             </div>
-
 
              <div class=" row">
               <div class=" col-md-5 pr-md-1">
@@ -129,19 +108,15 @@
                   <input
                     class=" form-control"
                     placeholder="Email"
-                    type="number" type="text" [(ngModel)] = "currentDriver.email" name="email"
-
+                    type="number" type="text" [(ngModel)] = "currentDriver.Email" name="Email"
                   />
                 </div>
               </div>
             </div>
-
-
-
           </form>
         </div>
         <div class=" card-footer">
-          <button class=" btn btn-fill btn-success" type="submit" (click)="updateDriver()" (click)="goToListPage('listDriver')">Save</button>
+          <button class=" btn btn-fill btn-success" type="submit" (click)="updateDriver(l?.IDChauffeur)" (click)="goToListPage('listDriver')">Save</button>
         </div>
       </div>
     </div>

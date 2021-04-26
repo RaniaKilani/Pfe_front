@@ -25,7 +25,7 @@
             <table class="table tablesorter" id="">
               <thead class="text-primary">
                 <tr>
-
+                  <th>ID</th>
                   <th>nom superviseur</th>
                   <th>Nom</th>
                   <th>Prénom</th>
@@ -39,7 +39,7 @@
               </thead>
               <tbody>
                 <tr *ngFor="let l of list">
-
+                  <td>{{l.IDChauffeur}}</td>
                   <td>{{l.NomSuperviseur}}</td>
                   <td>{{l.Nom}}</td>
                   <td>{{l.prenom}}</td>
@@ -54,7 +54,9 @@
                     <label class="btn btn-sm btn-success btn-simple">
                       <span
                         class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
-                        [routerLink]="['/updateDriver', driver?.idCh]"
+                        [routerLink]="['/updateDriver', l.IDChauffeur]"
+
+
                       >
                         editer
                       </span>
@@ -63,7 +65,7 @@
                     <label class="btn btn-sm btn-danger btn-simple">
                       <span
                         class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
-                        (click)="deleteDriver(driver)"
+                        (click)="deleteDriver(l.IDChauffeur)"
                       >
                         <i class="tim-icons icon-trash-simple"> </i>
                       </span>

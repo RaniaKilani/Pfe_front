@@ -26,32 +26,31 @@ export class DriverListComponent implements OnInit {
       this.list = dr;
       for(let l of this.list){
         console.log(l)
-        console.log(l["Nom "])
+
       }
 
       });
   }
- /* deleteDriver( el : Driver){
 
-    this.driverService.deleteDriver(el);
 
-  }*/
 
-  deleteDriver(driver){
-     let conf = confirm("you are sure to delete car?")
-     if (conf)
+   deleteDriver(id : number)
+   {
 
-   this.list.splice(driver,1);
+   let conf = confirm("Etes-vous sûr ?");
+   if (conf)
+     this.driverService.deleteDriver(id).subscribe(()=>{
+      console.log("chauffeur supprimé");
+
+
+     });
+
+     this.router.navigate(['listDriver']).then(() => {
+      window.location.reload();
+      });
    }
-   updateDriver(){
-    console.log("ho");
 
-   this.currentDriver = this.driverService.consulterDriver(this.activatedRoute.snapshot.params.id);
 
-   }
-   /*
-   deleteDriver(driver: Driver){//méthode pour supprimer un chaffeur
-    //console.log(driver);
-    this.driverService.deleteDriver(driver);
-   }*/
+
+
 }

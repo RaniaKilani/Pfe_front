@@ -6,34 +6,7 @@
         <div class=" card-header"><h5 class=" title">Ajout des chauffeurs </h5></div>
         <div class=" card-body">
           <form>
-          <div class=" row">
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
-                  <label> Id </label>
-                  <input
-                    class=" form-control"
-                    placeholder="id"
-                    type="text" [(ngModel)] = "newDriver.IDChauffeur" name = "IDChauffeur"
 
-                  />
-
-              </div>
-
-            </div>
-
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
-                  <label> Nom superviseur  </label>
-                  <input
-                    class=" form-control"
-                    placeholder="Nom superviseur"
-                    type="text" [(ngModel)] = "newDriver.NomSuperviseur" name = "NomSuperviseur"
-
-                  />
-                </div>
-              </div>
-
-            </div>
             <div class=" row">
               <div class=" col-md-5 pr-md-1">
                 <div class=" form-group">
@@ -46,8 +19,6 @@
                   />
                 </div>
               </div>
-
-
 
               <div class=" col-md-5 pr-md-1">
                 <div class=" form-group">
@@ -95,7 +66,7 @@
                   <input
                     class=" form-control"
                     placeholder="Date De Naissance"
-                    type="text"  [(ngModel)] = "newDriver.DateNaissance" name = "DateNaissance"
+                    type="date"  [(ngModel)] = "newDriver.DateNaissance" name = "DateNaissance"
 
                   />
                 </div>
@@ -107,7 +78,7 @@
                   <input
                     class=" form-control"
                     placeholder="Date D'embauche"
-                    type="text"  [(ngModel)] = "newDriver.DateEmbauche" name = "DateEmbauche"
+                    type="date"  [(ngModel)] = "newDriver.DateEmbauche" name = "DateEmbauche"
 
                   />
                 </div>
@@ -127,6 +98,20 @@
                   />
                 </div>
               </div>
+
+              <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> Nom superviseur  </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Nom superviseur"
+                    type="text" [(ngModel)] = "newDriver.NomSuperviseur" name = "NomSuperviseur"
+
+                  />
+
+              </div>
+
+            </div>
             </div>
           </form>
         </div>

@@ -5,7 +5,7 @@ export class Driver{
   prenom:string;
   Telephone:string;
   Adresse  :string;
-  DateNaissance:string;
-  DateEmbauche:string;
+  DateNaissance:Date;
+  DateEmbauche:Date;
   Email:string;
   }

@@ -26,6 +26,9 @@ export class AddDriverComponent implements OnInit {
     this.driverService.addDriver(this.newDriver).subscribe(drv => {
     console.log(drv);
     });
+    this.router.navigate(['listDriver']).then(() => {
+
+      });
 }
 
 
