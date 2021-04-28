@@ -16,8 +16,6 @@
                   >
                     Ajouter véhicule
                   </span>
-
-
                  </label>
               </div>
             </div>
@@ -26,68 +24,50 @@
             <table class=" table tablesorter" id="">
               <thead class=" text-primary">
                 <tr>
-                <th>matricule</th>
-                  <th>type de véhicule</th>
-                  <th>année de fabrication</th>
+                <th>Matricule</th>
+                  <th>Type de véhicule</th>
+                  <th>Année de fabrication</th>
                   <th>marque</th>
-                  <th>type de carburant</th>
-                  <th>puissance</th>
-                  <th>kilométrage</th>
-                  <th>consommation de carburant</th>
-                  <th>nombre des places</th>
+                  <th>Type de carburant</th>
+                  <th>Puissance</th>
+                  <th>Kilométrage</th>
+                  <th>Consommation de carburant</th>
+                  <th>Nombre des places</th>
                   <th>Capacité en Kg</th>
-
-                  <th>Climatisation</th>
-                  <th>Parallélisme</th>
-                  <th>Vidange</th>
-                  <th>Mouteur</th>
-                  <th>Pneumatique</th>
-                  <th>Etat</th>
                   <th>Disponibilité</th>
-
+                  <th>Type de permis</th>
+                  <th>Mot clé</th>
                   <th>action</th>
                 </tr>
               </thead>
               <tbody  >
                 <tr *ngFor = "let l of list">
-                <td>{{l.mat}}</td>
-                  <td>{{l.ty}}</td>
-                  <td>{{l.an | date :'dd/MM/yyyy'}}</td>
-                  <td>{{l.mr}}</td>
-                  <td class=" text-center">{{l.tyC}}</td>
-                  <td>{{l.powr}}</td>
-                  <td>{{l.kilo}}</td>
-                  <td>{{l.conso}}</td>
-                  <td>{{l.nb}}</td>
-                  <td>{{l.cap}}</td>
-
-                  <td>{{l.clim}}</td>
-                  <td>{{l.para}}</td>
-                  <td>{{l.vid}}</td>
-                  <td>{{l.mout}}</td>
-                  <td>{{l.pneau}}</td>
-
-                  <td>{{l.etat}}</td>
-                  <td>{{l.dispo}}</td>
-
+                <td>{{l.Matricule}}</td>
+                  <td>{{l.TypeVehicule}}</td>
+                  <td>{{l.AnneeFabrication | date :'dd/MM/yyyy'}}</td>
+                  <td>{{l.Marque}}</td>
+                  <td>{{l.Puissance}}</td>
+                  <td>{{l.Kilometrage}}</td>
+                  <td>{{l.ConsommationCarburant}}</td>
+                  <td>{{l.NombrePlace}}</td>
+                  <td>{{l.Capacite}}</td>
+                  <td>{{l.Climatisation}}</td>
+                  <td>{{l.Kilometrage}}</td>
+                  <td>{{l.Disponibilite}}</td>
+                  <td>{{l.TypePermis}}</td>
+                  <td>{{l.MotCle}}</td>
                   <td >
                   <label class=" btn btn-sm btn-success btn-simple" >
                   <span class=" d-none d-sm-block d-md-block d-lg-block d-xl-block" [routerLink]="['/updateCar']"> editer </span>
                   </label>
-
                   <label class=" btn btn-sm btn-danger btn-simple" >
-
-
-
                  <span class=" d-none d-sm-block d-md-block d-lg-block d-xl-block" (click)="delete(el)"
 
                  >supprimer
                      </span>
                    </label>
                   </td>
-
                 </tr>
-
               </tbody>
             </table>
           </div>

@@ -1,16 +1,17 @@
 export class Car{
-  mat:string;
-  ty:string;
-  an:Date;
-  mr:string;
-  tyC:string;
-  powr:number;
-  kilo:number;
-  conso:number;
-  nb : number;
-  cap:number;
-  maint:{clim:boolean; para:boolean; vid:boolean; mout:boolean; pneau:boolean; etat:string};
-  dispo:string;
+  Matricule:string;
+  TypeVehicule:string;
+  AnneeFabrication:Date;
+  Marque:string;
+  TypeCarburant:string;
+  Puissance:number;
+  Kilometrage:number;
+  ConsommationCarburant:number;
+  NombrePlace: number;
+  Capacite:number;
+  Disponibilite:string;
+  TypePermis:string;
+  MotCle:string;
 
 
 }

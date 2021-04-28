@@ -6,30 +6,6 @@
         <div class=" card-header"><h5 class=" title">Modifier les chauffeurs </h5></div>
         <div class=" card-body">
           <form>
-          <div class=" row">
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
-                  <label> Id </label>
-                  <input
-                    class=" form-control"
-                    placeholder="Id"
-                    type="text" [(ngModel)] = "currentDriver.IDChauffeur" name = "IDChauffeur"
-
-                  />
-                </div>
-              </div>
-               <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
-                  <label> Nom de superviseur </label>
-                  <input
-                    class=" form-control"
-                    placeholder="Nom Superviseur"
-                    type="text" [(ngModel)] = "currentDriver.NomSuperviseur" name = "NomSuperviseur"
-                  />
-                </div>
-              </div>
-
-            </div>
             <div class=" row">
               <div class=" col-md-5 pr-md-1">
                 <div class=" form-group">
@@ -108,7 +84,17 @@
                   <input
                     class=" form-control"
                     placeholder="Email"
-                    type="number" type="text" [(ngModel)] = "currentDriver.Email" name="Email"
+                    type="text" type="text" [(ngModel)] = "currentDriver.Email" name="Email"
+                  />
+                </div>
+              </div>
+              <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> Nom de superviseur </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Nom Superviseur"
+                    type="text" [(ngModel)] = "currentDriver.NomSuperviseur" name = "NomSuperviseur"
                   />
                 </div>
               </div>

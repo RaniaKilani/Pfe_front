@@ -1,171 +1,191 @@
-
-<div class=" content">
-  <div class=" row">
-    <div class=" col-md-12 ">
-      <div class=" card">
-        <div class=" card-header"><h5 class=" title">Ajouter Véhicule </h5></div>
-        <div class=" card-body">
+<div class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header"><h5 class="title">Ajouter Véhicule</h5></div>
+        <div class="card-body">
           <form>
-            <div class=" row">
-              <div class=" col-md-3 pr-md-6">
-                <div class=" form-group">
+            <div class="row">
+              <div class="col-md-3 pr-md-6">
+                <div class="form-group">
                   <label> Matricule</label>
                   <input
-                    class=" form-control"
-
+                    class="form-control"
                     placeholder="Matricule"
                     type="text"
-
+                    [(ngModel)]="newCar.Matricule"
+                    name="Matricule"
                   />
                 </div>
               </div>
-              <div class=" col-md-3 px-md-6">
-                <div class=" form-group">
+              <div class="col-md-3 px-md-6">
+                <div class="form-group">
                   <label> Type véhicule </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Type véhicule"
                     type="text"
-
+                    [(ngModel)]="newCar.TypeVehicule"
+                    name="TypeVehicule"
                   />
                 </div>
               </div>
-              <div class=" col-md-4 pl-md-6">
-                <div class=" form-group">
-                  <label > Marque </label>
+              <div class="col-md-4 pl-md-6">
+                <div class="form-group">
+                  <label> Marque </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Marque"
                     type="text"
+                    [(ngModel)]="newCar.Marque"
+                    name="Marque"
                   />
                 </div>
               </div>
             </div>
-            <div class=" row">
-              <div class=" col-md-5 pr-md-6">
-                <div class=" form-group">
+            <div class="row">
+              <div class="col-md-5 pr-md-6">
+                <div class="form-group">
                   <label> Année de fabrication </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Année de fabrication"
                     type="date"
-
+                    [(ngModel)]="newCar.AnneeFabrication"
+                    name="AnneeFabrication"
                   />
                 </div>
               </div>
-              <div class=" col-md-5 pl-md-6">
-                <div class=" form-group">
+              <div class="col-md-5 pl-md-6">
+                <div class="form-group">
                   <label> Type de carburant </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Type de carburant"
                     type="text"
-
+                    [(ngModel)]="newCar.TypeCarburant"
+                    name="TypeCarburant"
                   />
                 </div>
               </div>
             </div>
-            <div class=" row">
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
+            <div class="row">
+              <div class="col-md-3 pr-md-1">
+                <div class="form-group">
                   <label> Puissance </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Puissance"
-                    type="text"
-
+                    type="number"
+                    [(ngModel)]="newCar.Puissance"
+                    name="Puissance"
                   />
-
+                </div>
               </div>
-            </div>
 
-              <div class=" col-md-5 pr-md-6">
-                <div class=" form-group">
+              <div class="col-md-3 pr-md-6">
+                <div class="form-group">
                   <label> Kilométrage </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Kilométrage"
-                    type="text"
-
+                    type="number"
+                    [(ngModel)]="newCar.Kilometrage"
+                    name="Kilometrage"
                   />
-                  </div>
                 </div>
               </div>
-              <div class=" row">
-              <div class=" col-md-5 px-md-6">
-                <div class=" form-group">
-                  <label> Consommation du Carburant </label>
+              <div class="col-md-4 pr-md-6">
+                <div class="form-group">
+                  <label> Mot clé </label>
                   <input
-                    class=" form-control"
-                    placeholder="Consommation du Carburant"
+                    class="form-control"
+                    placeholder="Mot clé"
                     type="text"
-
+                    [(ngModel)]="newCar.MotCle"
+                    name="MotCle"
                   />
                 </div>
               </div>
-              <div class=" col-md-5 pl-md-1">
-                <div class=" form-group">
+            </div>
+            <div class="row">
+              <div class="col-md-5 px-md-6">
+                <div class="form-group">
+                  <label> Consommation du Carburant en (L) </label>
+                  <input
+                    class="form-control"
+                    placeholder="Consommation du Carburant"
+                    type="number"
+                    [(ngModel)]="newCar.ConsommationCarburant"
+                    name="ConsommationCarburant"
+                  />
+                </div>
+              </div>
+              <div class="col-md-5 pl-md-1">
+                <div class="form-group">
                   <label> Nombre de place </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Nombre de place"
                     type="number"
+                    [(ngModel)]="newCar.NombrePlace"
+                    name="NombrePlace"
                   />
                 </div>
               </div>
             </div>
-            <div class=" row">
-            <div class=" col-md-3 px-md-6">
-                <div class=" form-group">
+            <div class="row">
+              <div class="col-md-3 px-md-6">
+                <div class="form-group">
                   <label> Capacité </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Capacité"
                     type="number"
-
+                    [(ngModel)]="newCar.Capacite"
+                    name="Capacite"
                   />
                 </div>
               </div>
-              <div class=" col-md-4 pl-md-1">
-                <div class=" form-group">
-                  <label > Maintenance </label>
-                  <input
-                    type="radio"
-                    name="maintenance"
+              <div class="col-md-4 pl-md-1">
+                <div class="form-group">
+                  <label> Type de permis </label>
+                  <select
+                    type="text"
+                    class="form-control"
+                    placeholder="Type de permis"
+                    [(ngModel)]="newCar.TypePermi                  >
+                    <option value="1" >
+                     A
+                    </option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                    <option value="4">D</option>
+                    <option value="5">E</option>
+                    <option value="6">H</option>
 
-                    id="maintenance"
-                    
-
-
-                    />
-
-
-
+                  </select>
                 </div>
               </div>
-              <div class=" col-md-3 pl-md-1">
-                <div class=" form-group">
-                  <label > Disponibilté </label>
+              <div class="col-md-3 pl-md-1">
+                <div class="form-group">
+                  <label> Disponibilté </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Disponibilté"
                     type="text"
+                    [(ngModel)]="newCar.Disponibilite"
+                    name="Disponibilte"
                   />
                 </div>
               </div>
             </div>
-
-
-
-
           </form>
         </div>
-        <div class=" card-footer">
-          <button class=" btn btn-fill btn-danger" type="submit">Save</button>
+        <div class="card-footer">
+          <button class="btn btn-fill btn-danger" type="submit">Save</button>
         </div>
       </div>
     </div>
-
-
   </div>
 </div>

@@ -21,8 +21,8 @@ export class DriverListComponent implements OnInit {
   goToAddPage(AddPage:string):void{
     this.router.navigate([`${AddPage}`]);
 }
-goToUpdatePage(UpdatePage:string):void{
-  this.router.navigate([`${UpdatePage}`]);
+goToUpdatePage(UpdatePage:string, id:number):void{
+  this.router.navigate([`${UpdatePage}/${id}`]);
 }
 
   ngOnInit(): void {

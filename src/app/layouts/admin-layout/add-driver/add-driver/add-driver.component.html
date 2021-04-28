@@ -1,123 +1,131 @@
-
-<div class=" content">
-  <div class=" row">
-    <div class=" col-md-12">
-      <div class=" card">
-        <div class=" card-header"><h5 class=" title">Ajout des chauffeurs </h5></div>
-        <div class=" card-body">
+<div class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title">Ajout des chauffeurs</h5>
+        </div>
+        <div class="card-body">
           <form>
-
-            <div class=" row">
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
+            <div class="row">
+              <div class="col-md-5 pr-md-1">
+                <div class="form-group">
                   <label> Nom </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Nom"
-                    type="text" [(ngModel)] = "newDriver.Nom" name = "Nom"
-
+                    type="text"
+                    [(ngModel)]="newDriver.Nom"
+                    name="Nom"
                   />
                 </div>
               </div>
 
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
+              <div class="col-md-5 pr-md-1">
+                <div class="form-group">
                   <label> Prénom </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Prénom"
-                    type="text" [(ngModel)] = "newDriver.prenom" name = "prenom"
-
+                    type="text"
+                    [(ngModel)]="newDriver.prenom"
+                    name="prenom"
                   />
                 </div>
               </div>
-
             </div>
-            <div class=" row">
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
+            <div class="row">
+              <div class="col-md-5 pr-md-1">
+                <div class="form-group">
                   <label> N° téléphone </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="N° téléphone"
-                    type="text" [(ngModel)] = "newDriver.Telephone" name = "Telephone"
-
+                    type="text"
+                    [(ngModel)]="newDriver.Telephone"
+                    name="Telephone"
                   />
                 </div>
               </div>
 
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
-                  <label> Adresse  </label>
+              <div class="col-md-5 pr-md-1">
+                <div class="form-group">
+                  <label> Adresse </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Adresse"
-                    type="text" [(ngModel)] = "newDriver.Adresse" name="Adresse"
-
+                    type="text"
+                    [(ngModel)]="newDriver.Adresse"
+                    name="Adresse"
                   />
                 </div>
               </div>
-
             </div>
-            <div class=" row">
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
-                  <label> Date De Naissance  </label>
+            <div class="row">
+              <div class="col-md-5 pr-md-1">
+                <div class="form-group">
+                  <label> Date De Naissance </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Date De Naissance"
-                    type="date"  [(ngModel)] = "newDriver.DateNaissance" name = "DateNaissance"
-
+                    type="date"
+                    [(ngModel)]="newDriver.DateNaissance"
+                    name="DateNaissance"
                   />
                 </div>
               </div>
 
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
-                  <label> Date D'embauche  </label>
+              <div class="col-md-5 pr-md-1">
+                <div class="form-group">
+                  <label> Date D'embauche </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Date D'embauche"
-                    type="date"  [(ngModel)] = "newDriver.DateEmbauche" name = "DateEmbauche"
-
+                    type="date"
+                    [(ngModel)]="newDriver.DateEmbauche"
+                    name="DateEmbauche"
                   />
                 </div>
               </div>
-
-
             </div>
-             <div class=" row">
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
-                  <label> Email  </label>
+            <div class="row">
+              <div class="col-md-5 pr-md-1">
+                <div class="form-group">
+                  <label> Email </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Email"
-                    type="text" [(ngModel)] = "newDriver.Email" name="Email"
-
+                    type="text"
+                    [(ngModel)]="newDriver.Email"
+                    name="Email"
                   />
                 </div>
               </div>
 
-              <div class=" col-md-5 pr-md-1">
-                <div class=" form-group">
-                  <label> Nom superviseur  </label>
+              <div class="col-md-5 pr-md-1">
+                <div class="form-group">
+                  <label> Nom superviseur </label>
                   <input
-                    class=" form-control"
+                    class="form-control"
                     placeholder="Nom superviseur"
-                    type="text" [(ngModel)] = "newDriver.NomSuperviseur" name = "NomSuperviseur"
-
+                    type="text"
+                    [(ngModel)]="newDriver.NomSuperviseur"
+                    name="NomSuperviseur"
                   />
-
+                </div>
               </div>
-
-            </div>
             </div>
           </form>
         </div>
-        <div class=" card-footer">
-          <button class=" btn btn-fill btn-danger" type="submit" (click)="addDriver()"
-           (click)="goToListPage('listDriver')">Ajouter</button>
+        <div class="card-footer">
+          <button
+            class="btn btn-fill btn-danger"
+            type="submit"
+            (click)="addDriver()"
+            (click)="goToListPage('listDriver')"
+          >
+            Ajouter
+          </button>
         </div>
       </div>
     </div>
